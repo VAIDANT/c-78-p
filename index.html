@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <img id="image" src="BeingAFamily_1024x1024_75a0a9cc-fc8d-46e2-ac99-1aeb7bee8c04.webp">
+    <h1 id="membername">My Family Book</h1>
+    <button onclick="next()">Next ></button>
+    <script>
+        var image = ["shinchan.png" , "SHIN.png", "VAIDANT.png", "BeingAFamily_1024x1024_75a0a9cc-fc8d-46e2-ac99-1aeb7bee8c04.webp"];
+        var names = ["Vikas Jindal", "Meenu Jindal", "Vaidant Jindal", "My Family Book"];
+        var i = 0;
+        function next() {
+            document.getElementById("membername").innerHTML=names[i];
+            document.getElementById("image").src=image[i];
+            i++;
+            if (i>3) {
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>
